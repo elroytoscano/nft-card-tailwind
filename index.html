@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/src/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/src/styles/output.css" />
+    <title>NFT Card</title>
+  </head>
+  <body class="bg-mainBG w-full h-screen grid place-items-center">
+    <main class="max-w-xs smd:max-w-sm">
+      <h1 class="w-0 h-0 absolute overflow-hidden">NFT Card preview</h1>
+      <div
+        class="rounded-xl p-4 bg-cardBG flex flex-col gap-4 shadow-md mx-4 my-6"
+      >
+        <div class="relative group cursor-pointer">
+          <img
+            src="/src/images/image-equilibrium.jpg"
+            alt="Equilibrium NFT"
+            class="rounded-xl object-cover cursor-pointer h-64 smd:h-80 w-full"
+          />
+          <span
+            class="
+              opacity-0
+              bg-cyan
+              absolute
+              left-0
+              top-0
+              w-full
+              h-full
+              hover:flex
+              justify-center
+              align-baseline
+              cursor-pointer
+              rounded-xl
+              transition-opacity
+              group-hover:opacity-30
+            "
+          >
+          </span>
+          <img
+            src="/src/images/icon-view.svg"
+            alt="View Ethereum"
+            class="
+              opacity-0
+              transition-opacity
+              group-hover:opacity-100
+              w-12
+              h-12
+              my-auto
+              fill-whiteColor
+              left-1/2
+              top-1/2
+              transform
+              -translate-x-1/2
+              absolute
+              -translate-y-1/2
+              flex
+              justify-center
+              align-baseline
+              cursor-pointer
+            "
+          />
+        </div>
+        <section class="flex flex-col gap-4">
+          <a href="#" class="mr-auto">
+            <h2
+              class="
+                hover:text-cyan
+                font-sans font-semibold
+                text-xl
+                smd:text-2xl
+                text-whiteColor
+                mr-auto
+                cursor-pointer
+              "
+            >
+              Equilibrium #3429
+            </h2>
+          </a>
+          <p class="text-softBlue">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="flex justify-between align-baseline">
+            <article class="flex gap-2 align-baseline">
+              <img
+                src="./src/images/icon-ethereum.svg"
+                alt="Ethereum symbol"
+                class="object-contain"
+              />
+              <h3 class="text-cyan">0.041 ETH</h3>
+            </article>
+            <div class="flex gap-2 align-baseline">
+              <img
+                src="src/images/icon-clock.svg"
+                class="object-contain cursor-pointer"
+                alt="Time remaining"
+              />
+              <p class="text-softBlue">3 days left</p>
+            </div>
+          </div>
+          <div class="w-full h-0.5 bg-lineColor"></div>
+          <div class="flex justify-start align-middle gap-4">
+            <img
+              src="/src/images/image-avatar.png"
+              alt="Avatar"
+              class="rounded-full border-2 border-whiteColor h-8"
+            />
+            <p class="text-softBlue inline pt-1">
+              Creation of
+              <a href="#">
+                <span
+                  class="text-whiteColor hover:text-cyan inline cursor-pointer"
+                  >Jules Wyvern</span
+                >
+              </a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
